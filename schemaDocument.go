@@ -32,7 +32,7 @@ import (
 	"reflect"
 	"regexp"
 
-	"github.com/sigu-399/gojsonreference"
+	"github.com/janmentzel/gojsonreference"
 )
 
 func NewJsonSchemaDocument(document interface{}) (*JsonSchemaDocument, error) {
