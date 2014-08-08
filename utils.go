@@ -53,13 +53,11 @@ func isStringInSlice(s []string, what string) bool {
 // Practical when it comes to differentiate a float from an integer since JSON only knows numbers
 // NOTE go's Parse(U)Int funcs accepts 1.0, 45.0 as integers
 func isFloat64AnInteger(n float64) bool {
-	// fmt.Println("this is neies librarie --------------------------------------")
 	return n == float64(int64(n)) || n == float64(uint64(n))
 }
 
 // formats a number so that it is displayed as the smallest string possible
 func validationErrorFormatNumber(n float64) string {
-	// fmt.Println("this is neies librarie --------------------------------------")
 
 	if isFloat64AnInteger(n) {
 		return fmt.Sprintf("%d", int64(n))
